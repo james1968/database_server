@@ -13,14 +13,13 @@ class DatabaseServer < Sinatra::Base
     get '/set' do
       somekeyhash = params
       puts somekeyhash
-      # @somekey = params[:somekey]
-      # puts @somekey
-      erb :form
+      "#{somekeyhash}"
     end
 
     get '/get' do
       @key = params[:key]
-      puts somekeyhash.fetch(@key)
+      somekeyhash.fetch(@key)
+      "#{somekeyhash.fetch(@key)}"
     end
 
     post '/set' do
