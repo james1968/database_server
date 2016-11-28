@@ -9,3 +9,18 @@ Makers Academy technical challenge to create a database server.  Challenge detai
 If you finish, you can work on saving the data to a file."
 
 Create a new git repository and write code to fulfill the brief to the best of your ability. Store the data in memory, not in a database, but bear in mind that you will later need to add a database to this code.
+
+##Instructions
+
+Fork or clone repo https://github.com/james1968/database_server.git.
+
+Run bundle install to ensure correct gems are installed.
+
+Run rspec to see test coverage.
+
+Run ruby app.rb to start application and Sinatra server.  Enter urls:
+http://localhost:4000/set?somekey=somevalue and
+
+http://localhost:4000/get?key=somekey
+
+The results from each url are displayed on the page.  
